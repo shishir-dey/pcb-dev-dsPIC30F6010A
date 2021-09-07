@@ -438,12 +438,12 @@ $EndComp
 $Comp
 L power:GND #PWR021
 U 1 1 6115ADAA
-P 8650 5100
-F 0 "#PWR021" H 8650 4850 50  0001 C CNN
-F 1 "GND" H 8655 4927 50  0000 C CNN
-F 2 "" H 8650 5100 50  0001 C CNN
-F 3 "" H 8650 5100 50  0001 C CNN
-	1    8650 5100
+P 8750 5100
+F 0 "#PWR021" H 8750 4850 50  0001 C CNN
+F 1 "GND" H 8755 4927 50  0000 C CNN
+F 2 "" H 8750 5100 50  0001 C CNN
+F 3 "" H 8750 5100 50  0001 C CNN
+	1    8750 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -476,10 +476,6 @@ Wire Wire Line
 Wire Wire Line
 	8000 5300 8150 5300
 Connection ~ 7600 5200
-Wire Wire Line
-	8650 5100 8650 5050
-Wire Wire Line
-	8650 5050 8150 5050
 Connection ~ 8150 5050
 Wire Wire Line
 	8150 5050 8150 5100
@@ -952,7 +948,7 @@ Text GLabel 8750 3550 2    50   Input ~ 0
 RB10
 Text GLabel 8250 3550 0    50   Input ~ 0
 RB11
-Text GLabel 8750 3050 2    50   Input ~ 0
+Text GLabel 8250 3050 0    50   Input ~ 0
 RB3
 Text GLabel 8750 3150 2    50   Input ~ 0
 RB6
@@ -1042,7 +1038,7 @@ Text GLabel 10300 3950 2    50   Input ~ 0
 RF3
 Text GLabel 8250 3350 0    50   Input ~ 0
 RB7
-Text GLabel 8750 2950 2    50   Input ~ 0
+Text GLabel 8250 2950 0    50   Input ~ 0
 RB5
 Text GLabel 8750 2850 2    50   Input ~ 0
 RE8
@@ -1056,9 +1052,9 @@ Text GLabel 8750 2450 2    50   Input ~ 0
 RE6
 Text GLabel 8250 3150 0    50   Input ~ 0
 RB2
-Text GLabel 8250 3050 0    50   Input ~ 0
+Text GLabel 8750 3050 2    50   Input ~ 0
 RB4
-Text GLabel 8250 2950 0    50   Input ~ 0
+Text GLabel 8750 2950 2    50   Input ~ 0
 RE9
 Text GLabel 8250 2850 0    50   Input ~ 0
 RG9
@@ -1205,4 +1201,80 @@ Wire Wire Line
 Connection ~ 10650 4050
 Wire Wire Line
 	10650 4050 10650 4150
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 6142E19D
+P 9650 4950
+F 0 "H1" V 9887 4953 50  0000 C CNN
+F 1 "MountingHole_Pad" V 9796 4953 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9650 4950 50  0001 C CNN
+F 3 "~" H 9650 4950 50  0001 C CNN
+	1    9650 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 6142FB0F
+P 9650 5300
+F 0 "H2" V 9887 5303 50  0000 C CNN
+F 1 "MountingHole_Pad" V 9796 5303 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9650 5300 50  0001 C CNN
+F 3 "~" H 9650 5300 50  0001 C CNN
+	1    9650 5300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 6142FCF5
+P 9650 5650
+F 0 "H3" V 9887 5653 50  0000 C CNN
+F 1 "MountingHole_Pad" V 9796 5653 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9650 5650 50  0001 C CNN
+F 3 "~" H 9650 5650 50  0001 C CNN
+	1    9650 5650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 6142FE9D
+P 9650 6000
+F 0 "H4" V 9887 6003 50  0000 C CNN
+F 1 "MountingHole_Pad" V 9796 6003 50  0000 C CNN
+F 2 "MountingHole:MountingHole_2.5mm_Pad" H 9650 6000 50  0001 C CNN
+F 3 "~" H 9650 6000 50  0001 C CNN
+	1    9650 6000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8750 5050 8750 5100
+Wire Wire Line
+	8150 5050 8750 5050
+$Comp
+L power:GND #PWR0103
+U 1 1 6144162E
+P 10100 6000
+F 0 "#PWR0103" H 10100 5750 50  0001 C CNN
+F 1 "GND" H 10105 5827 50  0000 C CNN
+F 2 "" H 10100 6000 50  0001 C CNN
+F 3 "" H 10100 6000 50  0001 C CNN
+	1    10100 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 6000 10100 6000
+Wire Wire Line
+	10100 6000 10100 5650
+Wire Wire Line
+	10100 5650 9750 5650
+Connection ~ 10100 6000
+Wire Wire Line
+	10100 5650 10100 5300
+Wire Wire Line
+	10100 5300 9750 5300
+Connection ~ 10100 5650
+Wire Wire Line
+	10100 5300 10100 4950
+Wire Wire Line
+	10100 4950 9750 4950
+Connection ~ 10100 5300
 $EndSCHEMATC

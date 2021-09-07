@@ -948,9 +948,9 @@ Text GLabel 8750 3550 2    50   Input ~ 0
 RB10
 Text GLabel 8250 3550 0    50   Input ~ 0
 RB11
-Text GLabel 8750 3050 2    50   Input ~ 0
+Text GLabel 8250 3050 0    50   Input ~ 0
 RB3
-Text GLabel 8750 3150 2    50   Input ~ 0
+Text GLabel 8250 3150 0    50   Input ~ 0
 RB6
 Text GLabel 8750 3650 2    50   Input ~ 0
 RB12
@@ -1038,7 +1038,7 @@ Text GLabel 10300 3950 2    50   Input ~ 0
 RF3
 Text GLabel 8250 3350 0    50   Input ~ 0
 RB7
-Text GLabel 8750 2950 2    50   Input ~ 0
+Text GLabel 8250 2950 0    50   Input ~ 0
 RB5
 Text GLabel 8750 2850 2    50   Input ~ 0
 RE8
@@ -1050,11 +1050,11 @@ Text GLabel 8750 2550 2    50   Input ~ 0
 RC1
 Text GLabel 8750 2450 2    50   Input ~ 0
 RE6
-Text GLabel 8250 3150 0    50   Input ~ 0
+Text GLabel 8750 3150 2    50   Input ~ 0
 RB2
-Text GLabel 8250 3050 0    50   Input ~ 0
+Text GLabel 8750 3050 2    50   Input ~ 0
 RB4
-Text GLabel 8250 2950 0    50   Input ~ 0
+Text GLabel 8750 2950 2    50   Input ~ 0
 RE9
 Text GLabel 8250 2850 0    50   Input ~ 0
 RG9
